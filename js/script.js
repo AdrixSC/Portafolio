@@ -110,8 +110,3 @@ $(function() {
     }
 
 }); /* End Fn */
-
-/*particlesJS.load (@ dom-id, @ path-json, @callback (opcional)); */
-particlesJS.load('particles-js', 'node_modules/particles.js/demo/particles.json', function() {
-    console.log('callback - node_modules/particles.js/demo/particles.json config loaded ');
-});
