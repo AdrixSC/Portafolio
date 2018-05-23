@@ -237,7 +237,6 @@ p.lead {
 
 header {
     padding: 100px 0 0;
-
     color: #FFF;
 }
 
@@ -664,17 +663,18 @@ header {
 }
 
 .title-projects {
-  text-align: center;
-  color: #b53691;
+    text-align: center;
+    color: #b53691;
 }
+
 .text-project {
-  text-align: justify;
+    text-align: justify;
 }
 
 .about-me {
-  padding-left: 0px;
-  padding-right: 0px;
-  margin-right: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-right: 0px;
 }
 
 .py-5 {
@@ -682,12 +682,28 @@ header {
     padding-top: 1rem!important;
 }
 
+.level {
+    color: #b1338e;
+    text-align: right;
+}
+
+.skills {
+    display: inherit;
+}
+
+.skill-title {
+    padding: 25px;
+    background-color: white;
+    border-radius: 10%;
+    margin-left: 5px;
+}
+
 #photo {
-  width: 30%;
+    width: 30%;
 }
 
 #particles-js {
-    width: 100%;
+    float: right;
     height: 500px;
-  }
-
+    width: 70%;
+}

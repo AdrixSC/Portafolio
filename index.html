@@ -39,7 +39,8 @@
                             <ul class="navbar-nav ml-auto">
                                 <li class="nav-item"> <a class="nav-link active" href="#sobre-mi">SOBRE MI <span class="sr-only">(current)</span></a> </li>
                                 <li class="nav-item"> <a class="nav-link" href="#herramientas-tecnicas">HERRAMIENTAS TECNICAS</a> </li>
-                                <li class="nav-item"> <a class="nav-link" href="#herramientas-blandas">LOGROS</a> </li>
+                                <li class="nav-item"> <a class="nav-link" href="#habilidades-blandas">HABILIDADES BLANDAS</a> </li>
+                                <li class="nav-item"> <a class="nav-link" href="#logros">LOGROS</a> </li>
                                 <li class="nav-item"> <a class="nav-link" href="#gallery">PROYECTOS</a></li>
                                 <li class="nav-item"> <a class="nav-link" href="#contact">CONTACTO</a> </li>
                             </ul>
@@ -58,12 +59,15 @@
 
     <!--section SOBRE MI-->
     <header class="bg-gradient" id="sobre-mi">
-        <div class="container about-me mt-5" id="particles-js">
+        <div class="container about-me mt-5">
             <h1>Adriana Echeverría</h1>
             <p class="tagline">Soy <span class="span-titles"> diseñadora gráfica </span> de profesión y <span class="span-titles"> front-end developer jr. </span> en Laboratoria, me gusta el código porque con el puedo hacer que la comunicación visual sea más dinámica, creando
                 interactividad en los sitios web para aportar soluciones a los usuarios en cualquier sector en el que esté involucrada la tecnología.</p>
         </div>
-        <div class="mt-3"><img id="photo" src="images/adriana-filtro.png" alt="adriana" class="img-fluid" /></div>
+        <div class="mt-3">
+            <img id="photo" src="images/adriana-filtro.png" alt="adriana" class="img-fluid" />
+            <div id="particles-js"></div>
+        </div>
     </header>
     <!-- // end .section -->
 
@@ -80,9 +84,10 @@
                         <div class="card-body">
                             <div class="media">
                                 <img class="width-logos" src="images/javascript.svg" alt="">
-                                <div class="media-body">
+                                <div class="media-body" data-toggle="modal" data-target="#exampleModal">
                                     <h4 class="card-title">JAVASCRIPT</h4>
                                     <p class="card-text">Herramienta principal para Programación</p>
+                                    <h6 class="level">BÁSICO</h6>
                                 </div>
                             </div>
                         </div>
@@ -96,6 +101,7 @@
                                 <div class="media-body">
                                     <h4 class="card-title">REACT</h4>
                                     <p class="card-text">Tecnología web para un desarrollo más factible en programación </p>
+                                    <h6 class="level">BÁSICO</h6>
                                 </div>
                             </div>
                         </div>
@@ -109,6 +115,7 @@
                                 <div class="media-body">
                                     <h4 class="card-title">AJAX</h4>
                                     <p class="card-text">Técnica para el desarrollo de páginas</p>
+                                    <h6 class="level">BÁSICO</h6>
                                 </div>
                             </div>
                         </div>
@@ -122,6 +129,7 @@
                                 <div class="media-body">
                                     <h4 class="card-title">JQUERY</h4>
                                     <p class="card-text">Librería que facilita la programación en el lenguaje de Javascript </p>
+                                    <h6 class="level">BÁSICO</h6>
                                 </div>
                             </div>
                         </div>
@@ -135,6 +143,7 @@
                                 <div class="media-body">
                                     <h4 class="card-title">HTML</h4>
                                     <p class="card-text">Herramientas para maquetar sitos web</p>
+                                    <h6 class="level">INTERMEDIO</h6>
                                 </div>
                             </div>
                         </div>
@@ -148,6 +157,7 @@
                                 <div class="media-body">
                                     <h4 class="card-title">CSS</h4>
                                     <p class="card-text">Herramientas para dar estilos a los sitios web</p>
+                                    <h6 class="level">INTERMEDIO</h6>
                                 </div>
                             </div>
                         </div>
@@ -161,6 +171,7 @@
                                 <div class="media-body">
                                     <h4 class="card-title">PHOTOSHOP</h4>
                                     <p class="card-text">Programa de diseño para editar fotografías</p>
+                                    <h6 class="level">INTERMEDIO</h6>
                                 </div>
                             </div>
                         </div>
@@ -174,6 +185,7 @@
                                 <div class="media-body">
                                     <h4 class="card-title">ILLUSTRATOR</h4>
                                     <p class="card-text">Programa de diseño para editar y crear gráficos vectoriales</p>
+                                    <h6 class="level">INTERMEDIO</h6>
                                 </div>
                             </div>
                         </div>
@@ -187,6 +199,7 @@
                                 <div class="media-body">
                                     <h4 class="card-title">GITHUB</h4>
                                     <p class="card-text">Plataforma de desarrollo colaborativo de software, para alojar proyectos utilizando el VCS de Git</p>
+                                    <h6 class="level">BÁSICO</h6>
                                 </div>
                             </div>
                         </div>
@@ -197,189 +210,267 @@
     </div>
     <!-- // end .section -->
 
-    <!--section LOGROS-->
-    <div class="section light-bg" id="herramientas-blandas">
+    <!--section HABILIDADES BLANDAS-->
+    <div class="section light-bg" id="habilidades-blandas">
         <div class="container">
             <div class="section-title">
-                <small>LOGROS</small>
-                <h3>Logros obtenidos con cada herramienta</h3>
+                <small>HABILIDADES BLANDAS</small>
+                <h3>FORMAS DE TRABAJO</h3>
             </div>
-
-            <ul class="nav nav-tabs nav-justified" role="tablist">
-                <li class="nav-item">
-                    <a class="nav-link active" data-toggle="tab" href="#javascript">JavaScript</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" data-toggle="tab" href="#maquetación">Maquetación</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" data-toggle="tab" href="#react">React</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" data-toggle="tab" href="#github">GitHub</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" data-toggle="tab" href="#api">API´s</a>
-                </li>
-            </ul>
-            <div class="tab-content">
-                <div class="tab-pane fade show active" id="javascript">
-                    <div class="d-flex flex-column flex-lg-row">
-                        <img src="images/javascript.svg" alt="graphic" class="img-fluid rounded align-self-start mr-lg-5 mb-5 mb-lg-0 width-logos">
-                        <div>
-                            <h2>JavaScript</h2>
-                            <p>Desarrollo de proyectos web y refactorización de código utilizando Javascript como lenguaje principal de programación, más uso y apoyo de jQuery y ECMAScript 6.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="tab-pane fade" id="maquetación">
-                    <div class="d-flex flex-column flex-lg-row">
-                        <div>
-                            <h2>Maquetación</h2>
-                            <p>Maquetación responsive y estilos de sitios web con HTML 5 y CSS, y aplicación de frameworks como Bootstrap y Materialize.
-                            </p>
-                        </div>
-                        <img src="images/Boostrap_logo.png" alt="graphic" class="img-fluid rounded align-self-start mr-lg-5 mb-5 mb-lg-0 width-logo-css">
-                    </div>
-                </div>
-                <div class="tab-pane fade" id="react">
-                    <div class="d-flex flex-column flex-lg-row">
-                        <img src="images/react.svg" alt="graphic" class="img-fluid rounded align-self-start mr-lg-5 mb-5 mb-lg-0 width-logos">
-                        <div>
-                            <h2>React</h2>
-                            <p>Implementación básica de tecnologías como React, para optimizar el desarrollo web.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="tab-pane fade" id="github">
-                    <div class="d-flex flex-column flex-lg-row">
-                        <div>
-                            <h2>GitHub</h2>
-                            <p>Conocimiento y uso de GitHub para el trabajo colaborativo.
-                            </p>
-                        </div>
-                        <img src="images/github-logo.svg" alt="graphic" class="img-fluid rounded align-self-start mr-lg-5 mb-5 mb-lg-0 width-logo-css">
-                    </div>
-                </div>
-                <div class="tab-pane fade" id="api">
-                    <div class="d-flex flex-column flex-lg-row">
-                        <div>
-                            <h2>API´s</h2>
-                            <p>Uso de métodos como AJAX y fetch para el consumo de servicios (API´s).
-                            </p>
-                        </div>
-                        <img src="images/api-icon.jpg" alt="graphic" class="img-fluid rounded align-self-start mr-lg-5 mb-5 mb-lg-0">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- // end .section -->
-
-
-    <div class="section light-bg" id="gallery">
-        <div class="container">
-            <div class="section-title">
-                <small></small>
-                <h3>Proyectos</h3>
-            </div>
-
-            <div class="img-gallery owl-carousel owl-theme">
-                <div>
-                    <a href="https://adrixsc.github.io/lab-car-boilerplate/" target="blank">
-                        <p class="title-projects">LAB CAR</p><img src="images/lab-car.jpg" alt="image"></a>
-                    <p class="text-project">Maquetación con Bootstrap (2018)</p>
-                </div>
-                <div>
-                    <a href="https://adrixsc.github.io/card-validator-without-plugin/" target="blank">
-                        <p class="title-projects">VALID CARD</p> <img src="images/valid-card.jpg" alt="image"></a>
-                    <p class="text-project">Validación de tarjeta de crédito con algoritmo Lunh (2018)</p>
-                </div>
-                <div>
-                    <a href="https://adrixsc.github.io/swapi/" target="blank">
-                        <p class="title-projects">SWAPI</p> <img src="images/swapi.jpg" alt="image"></a>
-                    <p class="text-project">Proyecto para mostrar data de la API de Star Wars (2018)</p>
-                </div>
-                <div>
-                    <a href="https://adrixsc.github.io/eco-shop/" target="blank">
-                        <p class="title-projects">ECOSHOP</p> <img src="images/eco-shop.jpg" alt="image"></a>
-                    <p class="text-project">Proyecto para consumir API´s de Mercado Libre, PayPal y Firebase (2018)</p>
-                </div>
-                <div>
-                    <a href="https://adrixsc.github.io/freelancer/" target="blank">
-                        <p class="title-projects">FREELANCER</p> <img src="images/freelancer.jpg" alt="image"></a>
-                    <p class="text-project">Maquetado sin grid ni frameworks (2017)</p>
-                </div>
-                <div>
-                    <a href="http://ocioymuseos.com.mx/bienvenida.php">
-                        <p class="title-projects">OCIO Y MUSEOS</p> <img src="images/ocioymuseos.jpg" alt="image"></a>
-                    <p class="text-project">Diseño y maquetado (2016)</p>
-                </div>
-                <div>
-                    <a href="https://user-images.githubusercontent.com/32860516/39320478-dd3d0946-4949-11e8-9b3c-f98dea7df5e5.jpg" target="blank">
-                        <p class="title-projects">VIEW SONIC</p> <img src="images/view-sonic-30.jpg" alt="image"></a>
-                    <p class="text-project">Diseño de mailing para View Sonic en su aniversario No.30 (2017)</p>
-                </div>
-                <div>
-                    <a href="https://user-images.githubusercontent.com/32860516/39320416-9db99078-4949-11e8-8592-099ccc69f960.jpg" target="blank">
-                        <p class="title-projects">PLAYERAS VIEW SONIC</p> <img src="images/playeras-viewsonic.jpg" alt="image"></a>
-                    <p class="text-project">Diseño de playeras para View Sonic (2017)</p>
-                </div>
-                <div>
-                    <a href="https://user-images.githubusercontent.com/32860516/39320526-040f9dc2-494a-11e8-9ffd-50781b381c67.jpg" target="blank">
-                        <p class="title-projects">HUNTS</p> <img src="images/hunts.jpg" alt="image"></a>
-                    <p class="text-project">Diseño de mailing para Hunts (2015)</p>
-                </div>
-
-            </div>
-
-        </div>
-
-    </div>
-    <!-- // end .section -->
-
-    <div class="light-bg py-5 nav-menu" id="contact">
-        <div class="container">
             <div class="row">
-                <div class="col-lg-5 text-center text-lg-left">
-                    <p class="mb-2"> <span class="ti-location-pin mr-2"></span> Col. 25 de Julio, G.A.M.</p>
-                    <div class=" d-block d-sm-inline-block">
-                        <p class="mb-2">
-                            <span class="ti-email mr-2"></span> <a class="mr-4" href="mailto:adriana.be@outlook.com">adriana.be@outlook.com</a>
-                        </p>
-                    </div>
-                    <div class="d-block d-sm-inline-block">
-                        <p class="mb-0">
-                            <span class="ti-headphone-alt mr-2"></span> <a>55-2943-9209</a>
-                        </p>
+                <div class="col-12 col-lg-4">
+                    <div class="card features herramientas-tecnicas margin-top-card">
+                        <div class="card-body">
+                            <div class="media">
+                                <div class="media-body">
+                                    <h4 class="card-title">Trabajo en equipo</h4>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="col-lg-6">
-                    <div class="social-icons">
-                        <a href="https://github.com/AdrixSC" target="blank"><span class="ti-github"></span></a>
-                        <a href="https://www.linkedin.com/in/adriana-becerril-echeverr%C3%ADa-a59b2238/" target="blank"><span class="ti-linkedin"></span></a>
+                <div class="col-12 col-lg-4">
+                    <div class="card features herramientas-tecnicas margin-top-card">
+                        <div class="card-body">
+                            <div class="media">
+                                <div class="media-body">
+                                    <h4 class="card-title">Perseverancia</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4">
+                    <div class="card features herramientas-tecnicas margin-top-card">
+                        <div class="card-body">
+                            <div class="media">
+                                <div class="media-body">
+                                    <h4 class="card-title">Organización</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4">
+                    <div class="card features herramientas-tecnicas margin-top-card">
+                        <div class="card-body">
+                            <div class="media">
+                                <div class="media-body">
+                                    <h4 class="card-title">Constancia</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4">
+                    <div class="card features herramientas-tecnicas margin-top-card">
+                        <div class="card-body">
+                            <div class="media">
+                                <div class="media-body">
+                                    <h4 class="card-title">Comunicación</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4">
+                    <div class="card features herramientas-tecnicas margin-top-card">
+                        <div class="card-body">
+                            <div class="media">
+                                <div class="media-body">
+                                    <h4 class="card-title">Control de estrés</h4>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
+        </div>
+        <!-- // end .section -->
+
+        <!--section LOGROS-->
+        <div class="section light-bg" id="logros">
+            <div class="container">
+                <div class="section-title">
+                    <small>LOGROS</small>
+                    <h3>Logros obtenidos con cada herramienta</h3>
+                </div>
+
+                <ul class="nav nav-tabs nav-justified" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" data-toggle="tab" href="#javascript">JavaScript</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#maquetación">Maquetación</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#react">React</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#github">GitHub</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#api">API´s</a>
+                    </li>
+                </ul>
+                <div class="tab-content">
+                    <div class="tab-pane fade show active" id="javascript">
+                        <div class="d-flex flex-column flex-lg-row">
+                            <img src="images/javascript.svg" alt="graphic" class="img-fluid rounded align-self-start mr-lg-5 mb-5 mb-lg-0 width-logos">
+                            <div>
+                                <h2>JavaScript</h2>
+                                <p>Desarrollo de proyectos web y refactorización de código utilizando Javascript como lenguaje principal de programación, más uso y apoyo de jQuery y ECMAScript 6.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="maquetación">
+                        <div class="d-flex flex-column flex-lg-row">
+                            <div>
+                                <h2>Maquetación</h2>
+                                <p>Maquetación responsive y estilos de sitios web con HTML 5 y CSS, y aplicación de frameworks como Bootstrap y Materialize.
+                                </p>
+                            </div>
+                            <img src="images/Boostrap_logo.png" alt="graphic" class="img-fluid rounded align-self-start mr-lg-5 mb-5 mb-lg-0 width-logo-css">
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="react">
+                        <div class="d-flex flex-column flex-lg-row">
+                            <img src="images/react.svg" alt="graphic" class="img-fluid rounded align-self-start mr-lg-5 mb-5 mb-lg-0 width-logos">
+                            <div>
+                                <h2>React</h2>
+                                <p>Implementación básica de tecnologías como React, para optimizar el desarrollo web.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="github">
+                        <div class="d-flex flex-column flex-lg-row">
+                            <div>
+                                <h2>GitHub</h2>
+                                <p>Conocimiento y uso de GitHub para el trabajo colaborativo.
+                                </p>
+                            </div>
+                            <img src="images/github-logo.svg" alt="graphic" class="img-fluid rounded align-self-start mr-lg-5 mb-5 mb-lg-0 width-logo-css">
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="api">
+                        <div class="d-flex flex-column flex-lg-row">
+                            <div>
+                                <h2>API´s</h2>
+                                <p>Uso de métodos como AJAX y fetch para el consumo de servicios (API´s).
+                                </p>
+                            </div>
+                            <img src="images/api-icon.jpg" alt="graphic" class="img-fluid rounded align-self-start mr-lg-5 mb-5 mb-lg-0">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- // end .section -->
+
+
+        <div class="section light-bg" id="gallery">
+            <div class="container">
+                <div class="section-title">
+                    <small></small>
+                    <h3>Proyectos</h3>
+                </div>
+
+                <div class="img-gallery owl-carousel owl-theme">
+                    <div>
+                        <a href="https://adrixsc.github.io/lab-car-boilerplate/" target="blank">
+                            <p class="title-projects">LAB CAR</p><img src="images/lab-car.jpg" alt="image"></a>
+                        <p class="text-project">Maquetación con Bootstrap (2018)</p>
+                    </div>
+                    <div>
+                        <a href="https://adrixsc.github.io/card-validator-without-plugin/" target="blank">
+                            <p class="title-projects">VALID CARD</p> <img src="images/valid-card.jpg" alt="image"></a>
+                        <p class="text-project">Validación de tarjeta de crédito con algoritmo Lunh (2018)</p>
+                    </div>
+                    <div>
+                        <a href="https://adrixsc.github.io/swapi/" target="blank">
+                            <p class="title-projects">SWAPI</p> <img src="images/swapi.jpg" alt="image"></a>
+                        <p class="text-project">Proyecto para mostrar data de la API de Star Wars (2018)</p>
+                    </div>
+                    <div>
+                        <a href="https://adrixsc.github.io/eco-shop/" target="blank">
+                            <p class="title-projects">ECOSHOP</p> <img src="images/eco-shop.jpg" alt="image"></a>
+                        <p class="text-project">Proyecto para consumir API´s de Mercado Libre, PayPal y Firebase (2018)</p>
+                    </div>
+                    <div>
+                        <a href="https://adrixsc.github.io/freelancer/" target="blank">
+                            <p class="title-projects">FREELANCER</p> <img src="images/freelancer.jpg" alt="image"></a>
+                        <p class="text-project">Maquetado sin grid ni frameworks (2017)</p>
+                    </div>
+                    <div>
+                        <a href="http://ocioymuseos.com.mx/bienvenida.php">
+                            <p class="title-projects">OCIO Y MUSEOS</p> <img src="images/ocioymuseos.jpg" alt="image"></a>
+                        <p class="text-project">Diseño y maquetado (2016)</p>
+                    </div>
+                    <div>
+                        <a href="https://user-images.githubusercontent.com/32860516/39320478-dd3d0946-4949-11e8-9b3c-f98dea7df5e5.jpg" target="blank">
+                            <p class="title-projects">VIEW SONIC</p> <img src="images/view-sonic-30.jpg" alt="image"></a>
+                        <p class="text-project">Diseño de mailing para View Sonic en su aniversario No.30 (2017)</p>
+                    </div>
+                    <div>
+                        <a href="https://user-images.githubusercontent.com/32860516/39320416-9db99078-4949-11e8-8592-099ccc69f960.jpg" target="blank">
+                            <p class="title-projects">PLAYERAS VIEW SONIC</p> <img src="images/playeras-viewsonic.jpg" alt="image"></a>
+                        <p class="text-project">Diseño de playeras para View Sonic (2017)</p>
+                    </div>
+                    <div>
+                        <a href="https://user-images.githubusercontent.com/32860516/39320526-040f9dc2-494a-11e8-9ffd-50781b381c67.jpg" target="blank">
+                            <p class="title-projects">HUNTS</p> <img src="images/hunts.jpg" alt="image"></a>
+                        <p class="text-project">Diseño de mailing para Hunts (2015)</p>
+                    </div>
+
+                </div>
+
+            </div>
 
         </div>
+        <!-- // end .section -->
 
-    </div>
-    <!-- // end .section -->
-    <footer class="my-5 text-center">
-    </footer>
+        <div class="light-bg py-5 nav-menu" id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-5 text-center text-lg-left">
+                        <p class="mb-2"> <span class="ti-location-pin mr-2"></span> Col. 25 de Julio, G.A.M.</p>
+                        <div class=" d-block d-sm-inline-block">
+                            <p class="mb-2">
+                                <span class="ti-email mr-2"></span> <a class="mr-4" href="mailto:adriana.be@outlook.com">adriana.be@outlook.com</a>
+                            </p>
+                        </div>
+                        <div class="d-block d-sm-inline-block">
+                            <p class="mb-0">
+                                <span class="ti-headphone-alt mr-2"></span> <a>55-2943-9209</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="social-icons">
+                            <a href="https://github.com/AdrixSC" target="blank"><span class="ti-github"></span></a>
+                            <a href="https://www.linkedin.com/in/adriana-becerril-echeverr%C3%ADa-a59b2238/" target="blank"><span class="ti-linkedin"></span></a>
+                        </div>
+                    </div>
+                </div>
 
-    <!-- jQuery and Bootstrap -->
-    <script src="js/jquery-3.2.1.min.js"></script>
-    <script src="js/bootstrap.bundle.min.js"></script>
-    <!-- Plugins JS -->
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/script.js"></script>
+            </div>
 
-    <script src="js/particles.js"></script>
-    <script src="js/config-particles.js"></script>
+        </div>
+        <!-- // end .section -->
+        <footer class="my-5 text-center">
+        </footer>
+
+        <!-- jQuery and Bootstrap -->
+        <script src="js/jquery-3.2.1.min.js"></script>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <!-- Plugins JS -->
+        <script src="js/owl.carousel.min.js"></script>
+        <script src="js/script.js"></script>
+
+        <script src="js/particles.js"></script>
+        <script src="js/config-particles.js"></script>
 
 </body>
 
