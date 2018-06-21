@@ -669,6 +669,7 @@ header {
 
 .text-project {
     text-align: justify;
+    padding: 10px;
 }
 
 .about-me {
