@@ -37,8 +37,8 @@
                     <nav class="navbar navbar-dark navbar-expand-lg">
                         <div class="collapse navbar-collapse" id="navbar">
                             <ul class="navbar-nav ml-auto">
-                                <li class="nav-item"> <a class="nav-link active" href="#sobre-mi">SOBRE MI <span class="sr-only">(current)</span></a> </li>
-                                <li class="nav-item"> <a class="nav-link" href="#herramientas-tecnicas">HERRAMIENTAS TECNICAS</a> </li>
+                                <li class="nav-item"> <a class="nav-link active" href="#container-sobre-mi">SOBRE MI <span class="sr-only">(current)</span></a> </li>
+                                <li class="nav-item"> <a class="nav-link" href="#herramientas-tecnicas">HABILIDADES TECNICAS</a> </li>
                                 <li class="nav-item"> <a class="nav-link" href="#habilidades-blandas">HABILIDADES BLANDAS</a> </li>
                                 <li class="nav-item"> <a class="nav-link" href="#logros">LOGROS</a> </li>
                                 <li class="nav-item"> <a class="nav-link" href="#gallery">PROYECTOS</a></li>
@@ -46,7 +46,6 @@
                             </ul>
                             <div class="col-lg-3">
                                 <div class="social-icons">
-                                    <a href="https://github.com/AdrixSC" target="blank"><span class="ti-github"></span></a>
                                     <a href="https://www.linkedin.com/in/adriana-becerril-echeverr%C3%ADa-a59b2238/" target="blank"><span class="ti-linkedin"></span></a>
                                 </div>
                             </div>
@@ -58,15 +57,16 @@
     </div>
 
     <!--section SOBRE MI-->
-    <header class="bg-gradient" id="sobre-mi">
-        <div class="container about-me mt-5">
-            <h1>Adriana Echeverría</h1>
-            <p class="tagline">Soy <span class="span-titles"> diseñadora gráfica </span> de profesión y <span class="span-titles"> front-end developer jr. </span> en Laboratoria, me gusta el código porque con el puedo hacer que la comunicación visual sea más dinámica, creando
-                interactividad en los sitios web para aportar soluciones a los usuarios en cualquier sector en el que esté involucrada la tecnología.</p>
-        </div>
+    <header class="bg-gradient" id="container-sobre-mi">
         <div class="mt-3">
             <img id="photo" src="images/adriana-filtro.png" alt="adriana" class="img-fluid" />
             <div id="particles-js"></div>
+        </div>
+        <div class="container about-me mt-5" id="sobre-mi">
+            <h1>Adriana Echeverría</h1>
+            <p class="tagline">Soy <span class="span-titles"> Diseñadora UX/UI </span> y <span class="span-titles"> Front-end Developer. </span> Me gusta desarrollar soluciones digitales y funcionales, para colaborar en el objetivo de lograr una experiencia de usuario amable e intuitiva.</p>
+            <p class="tagline">Tengo una formación a nivel licenciatura como Diseñadora Gráfica, pero mi rumbo hacia el sector de tecnología surgió conforme mi propio trabajo lo fue demandando y también por gusto propio, por lo que me he dedicado a tomar cursos presenciales y en línea para contar con los conocimientos necesarios y solucionar problemas reales a nivel digital.</p>
+            <p class="tagline">Me apasiona lo que hago, razón por la que busco continuar aprendiendo cada día</p>
         </div>
     </header>
     <!-- // end .section -->
@@ -75,47 +75,20 @@
     <div class="section light-bg" id="herramientas-tecnicas">
         <div class="container">
             <div class="section-title">
-                <small>HERRAMIENTAS TÉCNICAS</small>
-                <h3>Programación y Diseño</h3>
+                <small>HABILIDADES TÉCNICAS</small>
+                <h3>Diseño y Programación</h3>
             </div>
             <div class="row">
                 <div class="col-12 col-lg-4">
-                    <div class="card features herramientas-tecnicas">
+                    <div class="card features herramientas-tecnicas margin-top-card">
                         <div class="card-body">
                             <div class="media">
-                                <img class="width-logos" src="images/javascript.svg" alt="">
+                                <div class="container-img-card">
+                                    <img class="width-logos" src="images/figma.png" alt="">
+                                </div>
                                 <div class="media-body" data-toggle="modal" data-target="#exampleModal">
-                                    <h4 class="card-title">JAVASCRIPT</h4>
-                                    <p class="card-text">Herramienta principal para Programación</p>
-                                    <h6 class="level">INTERMEDIO</h6>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-lg-4">
-                    <div class="card features herramientas-tecnicas">
-                        <div class="card-body">
-                            <div class="media">
-                                <img class="width-logos" src="images/react.svg" alt="">
-                                <div class="media-body">
-                                    <h4 class="card-title">REACT</h4>
-                                    <p class="card-text">Tecnología web para un desarrollo más factible en programación </p>
-                                    <h6 class="level">BÁSICO</h6>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-lg-4">
-                    <div class="card features herramientas-tecnicas">
-                        <div class="card-body">
-                            <div class="media">
-                                <img class="width-logos" src="images/ajax.png" alt="">
-                                <div class="media-body">
-                                    <h4 class="card-title">AJAX</h4>
-                                    <p class="card-text">Técnica para el desarrollo de páginas</p>
-                                    <h6 class="level">BÁSICO</h6>
+                                    <h4 class="card-title">FIGMA</h4>
+                                    <p class="card-text">Herramienta de prototipado web y editor de gráficos vectorial</p>
                                 </div>
                             </div>
                         </div>
@@ -125,11 +98,12 @@
                     <div class="card features herramientas-tecnicas margin-top-card">
                         <div class="card-body">
                             <div class="media">
-                                <img class="width-logo-css" src="images/jquery-logo.jpg" alt="">
-                                <div class="media-body">
-                                    <h4 class="card-title">JQUERY</h4>
-                                    <p class="card-text">Librería que facilita la programación en el lenguaje de Javascript </p>
-                                    <h6 class="level">BÁSICO</h6>
+                                <div class="container-img-card">
+                                    <img class="width-logos" src="images/miro.jpeg" alt="">
+                                </div>
+                                <div class="media-body" data-toggle="modal" data-target="#exampleModal">
+                                    <h4 class="card-title">MIRO</h4>
+                                    <p class="card-text">Pizarra digital colaborativa en línea, para la investigación, lluvias de ideas, mapas mentales, etc.</p>
                                 </div>
                             </div>
                         </div>
@@ -139,11 +113,12 @@
                     <div class="card features herramientas-tecnicas margin-top-card">
                         <div class="card-body">
                             <div class="media">
-                                <img class="width-logos" src="images/HTML.png" alt="">
-                                <div class="media-body">
-                                    <h4 class="card-title">HTML</h4>
-                                    <p class="card-text">Herramientas para maquetar sitos web</p>
-                                    <h6 class="level">INTERMEDIO</h6>
+                                <div class="container-img-card">
+                                    <img class="width-logos" src="images/marvel.png" alt="">
+                                </div>
+                                <div class="media-body" data-toggle="modal" data-target="#exampleModal">
+                                    <h4 class="card-title">MARVEL</h4>
+                                    <p class="card-text">Herramienta para crear prototipos interactivos de plataformas digitales</p>
                                 </div>
                             </div>
                         </div>
@@ -153,25 +128,12 @@
                     <div class="card features herramientas-tecnicas margin-top-card">
                         <div class="card-body">
                             <div class="media">
-                                <img class="width-logo-css" src="images/CSS.png" alt="">
-                                <div class="media-body">
-                                    <h4 class="card-title">CSS</h4>
-                                    <p class="card-text">Herramientas para dar estilos a los sitios web</p>
-                                    <h6 class="level">INTERMEDIO</h6>
+                                <div class="container-img-card">
+                                    <img class="width-logos" src="images/photoshop.png" alt="">
                                 </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-lg-4">
-                    <div class="card features herramientas-tecnicas margin-top-card">
-                        <div class="card-body">
-                            <div class="media">
-                                <img class="width-logo-css" src="images/photoshop.png" alt="">
                                 <div class="media-body">
                                     <h4 class="card-title">PHOTOSHOP</h4>
                                     <p class="card-text">Programa de diseño para editar fotografías</p>
-                                    <h6 class="level">INTERMEDIO</h6>
                                 </div>
                             </div>
                         </div>
@@ -181,11 +143,12 @@
                     <div class="card features herramientas-tecnicas margin-top-card">
                         <div class="card-body">
                             <div class="media">
-                                <img class="width-logo-css" src="images/illustrator.png" alt="">
+                                <div class="container-img-card">
+                                    <img class="width-logos" src="images/illustrator.png" alt="">
+                                </div>
                                 <div class="media-body">
                                     <h4 class="card-title">ILLUSTRATOR</h4>
                                     <p class="card-text">Programa de diseño para editar y crear gráficos vectoriales</p>
-                                    <h6 class="level">INTERMEDIO</h6>
                                 </div>
                             </div>
                         </div>
@@ -195,11 +158,72 @@
                     <div class="card features herramientas-tecnicas margin-top-card">
                         <div class="card-body">
                             <div class="media">
-                                <img class="width-logo-css" src="images/github-logo.svg" alt="">
+                                <div class="container-img-card">
+                                    <img class="width-logos" src="images/javascript.svg" alt="">
+                                </div>
+                                <div class="media-body" data-toggle="modal" data-target="#exampleModal">
+                                    <h4 class="card-title">JAVASCRIPT</h4>
+                                    <p class="card-text">Lenguaje principal de programación</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4">
+                    <div class="card features herramientas-tecnicas margin-top-card">
+                        <div class="card-body">
+                            <div class="media">
+                                <div class="container-img-card">
+                                    <img class="width-logos" src="images/react.svg" alt="">
+                                </div>
+                                <div class="media-body">
+                                    <h4 class="card-title">REACT</h4>
+                                    <p class="card-text">Tecnología web para un desarrollo más factible en programación </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4">
+                    <div class="card features herramientas-tecnicas margin-top-card">
+                        <div class="card-body">
+                            <div class="media">
+                                <div class="container-img-card">
+                                    <img class="width-logos" src="images/HTML.png" alt="">
+                                </div>
+                                <div class="media-body">
+                                    <h4 class="card-title">HTML</h4>
+                                    <p class="card-text">Herramientas para maquetar sitos web</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4">
+                    <div class="card features herramientas-tecnicas margin-top-card">
+                        <div class="card-body">
+                            <div class="media">
+                                <div class="container-img-card">
+                                    <img class="width-logo-css" src="images/CSS.png" alt="">
+                                </div>
+                                <div class="media-body">
+                                    <h4 class="card-title">CSS</h4>
+                                    <p class="card-text">Herramientas para dar estilos a los sitios web</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4">
+                    <div class="card features herramientas-tecnicas margin-top-card">
+                        <div class="card-body">
+                            <div class="media">
+                                <div class="container-img-card">
+                                    <img class="width-logos" src="images/github-logo.svg" alt="">
+                                </div>
                                 <div class="media-body">
                                     <h4 class="card-title">GITHUB</h4>
                                     <p class="card-text">Plataforma de desarrollo colaborativo de software, para alojar proyectos utilizando el VCS de Git</p>
-                                    <h6 class="level">BÁSICO</h6>
                                 </div>
                             </div>
                         </div>
@@ -278,7 +302,7 @@
                         <div class="card-body">
                             <div class="media">
                                 <div class="media-body">
-                                    <h4 class="card-title">Control de estrés</h4>
+                                    <h4 class="card-title">Perfeccionismo</h4>
                                 </div>
                             </div>
                         </div>
@@ -293,33 +317,27 @@
             <div class="container">
                 <div class="section-title">
                     <small>LOGROS</small>
-                    <h3>Logros obtenidos con cada herramienta</h3>
+                    <h3>Logros obtenidos</h3>
                 </div>
 
                 <ul class="nav nav-tabs nav-justified" role="tablist">
                     <li class="nav-item">
-                        <a class="nav-link active" data-toggle="tab" href="#javascript">JavaScript</a>
+                        <a class="nav-link active" data-toggle="tab" href="#javascript">UX</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" data-toggle="tab" href="#maquetación">Maquetación</a>
+                        <a class="nav-link" data-toggle="tab" href="#maquetación">UI</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" data-toggle="tab" href="#react">React</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" data-toggle="tab" href="#github">GitHub</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" data-toggle="tab" href="#api">API´s</a>
+                        <a class="nav-link" data-toggle="tab" href="#react">Front-end</a>
                     </li>
                 </ul>
                 <div class="tab-content">
                     <div class="tab-pane fade show active" id="javascript">
                         <div class="d-flex flex-column flex-lg-row">
-                            <img src="images/javascript.svg" alt="graphic" class="img-fluid rounded align-self-start mr-lg-5 mb-5 mb-lg-0 width-logos">
+                            <img src="images/UX.jpg" alt="graphic" class="img-fluid rounded align-self-start mr-lg-5 mb-5 mb-lg-0 logos-tab">
                             <div>
-                                <h2>JavaScript</h2>
-                                <p>Desarrollo de proyectos web y refactorización de código utilizando Javascript como lenguaje principal de programación, más uso y apoyo de jQuery.
+                                <h2>UX</h2>
+                                <p>Los logros que he tenido en esta área, han sido basados en una investigación de usuarios para lograr realmente empatizar con ellos y comprender cuál es el problema a solucionar. Todo esto a través de creación de mapas de empatía, creación de user person y proto person, mapas de experiencia, mapas de viaje, etc.
                                 </p>
                             </div>
                         </div>
@@ -327,41 +345,21 @@
                     <div class="tab-pane fade" id="maquetación">
                         <div class="d-flex flex-column flex-lg-row">
                             <div>
-                                <h2>Maquetación</h2>
-                                <p>Maquetación responsive y estilos de sitios web con HTML5 y CSS, y aplicación de frameworks como Bootstrap y Materialize.
+                                <h2>UI</h2>
+                                <p>El mayor logro que puedo considerar para esta área, es poder crear un sistema de diseño, basado en los principios de usabilidad y un diseño atómico, lo cual facilita mucho el trabajo al momento de crear los mockups, pues al tener ya una base de diseño, es más ágil pasar al proceso de diseño en sí.
                                 </p>
                             </div>
-                            <img src="images/Boostrap_logo.png" alt="graphic" class="img-fluid rounded align-self-start mr-lg-5 mb-5 mb-lg-0 width-logo-css">
+                            <img src="images/UI.jpg" alt="graphic" class="img-fluid rounded align-self-start mr-lg-5 mb-5 mb-lg-0 logos-tab">
                         </div>
                     </div>
                     <div class="tab-pane fade" id="react">
                         <div class="d-flex flex-column flex-lg-row">
-                            <img src="images/react.svg" alt="graphic" class="img-fluid rounded align-self-start mr-lg-5 mb-5 mb-lg-0 width-logos">
+                            <img src="images/FRONT.jpg" alt="graphic" class="img-fluid rounded align-self-start mr-lg-5 mb-5 mb-lg-0 logos-tab">
                             <div>
-                                <h2>React</h2>
-                                <p>Implementación básica de tecnologías como React, para optimizar el desarrollo web.
+                                <h2>Front-end Developer</h2>
+                                <p>Sin duda lograr aprender a codificar, fue un gran reto para mi, lo cual me llena de orgullo porque me ha dejado mucho aprendizaje para poder darle vida a un diseño estático, mi parte favorita en esta rama, es la maquetación y darle estilos, pues aunque me gusta desarrollar, ya tengo muy tatuada mi parte de diseñadora.
                                 </p>
                             </div>
-                        </div>
-                    </div>
-                    <div class="tab-pane fade" id="github">
-                        <div class="d-flex flex-column flex-lg-row">
-                            <div>
-                                <h2>GitHub</h2>
-                                <p>Conocimiento y uso de GitHub para el trabajo colaborativo.
-                                </p>
-                            </div>
-                            <img src="images/github-logo.svg" alt="graphic" class="img-fluid rounded align-self-start mr-lg-5 mb-5 mb-lg-0 width-logo-css">
-                        </div>
-                    </div>
-                    <div class="tab-pane fade" id="api">
-                        <div class="d-flex flex-column flex-lg-row">
-                            <div>
-                                <h2>API´s</h2>
-                                <p>Uso de métodos como AJAX y fetch para el consumo de servicios (API´s).
-                                </p>
-                            </div>
-                            <img src="images/api-icon.jpg" alt="graphic" class="img-fluid rounded align-self-start mr-lg-5 mb-5 mb-lg-0">
                         </div>
                     </div>
                 </div>
@@ -379,49 +377,43 @@
 
                 <div class="img-gallery owl-carousel owl-theme">
                     <div>
-                        <a href="https://adrixsc.github.io/lab-car-boilerplate/" target="blank">
-                            <p class="title-projects">LAB CAR</p><img src="images/lab-car.jpg" alt="image"></a>
-                        <p class="text-project">Maquetación con Bootstrap (2018)</p>
+                        <a href="https://www.figma.com/file/4k2LaYpYlTmILAznuEZmwu/PR-FACTORY?node-id=0%3A1" target="blank">
+                            <p class="title-projects">PR FACTORY</p> <img src="images/home-pr-factory.png" alt="image"></a>
+                            <p class="text-project">Rediseño de sitio web, implementando investigación de usuario y aplicando UI de acuerdo al UX.</p>
                     </div>
                     <div>
-                        <a href="https://adrixsc.github.io/card-validator-without-plugin/" target="blank">
-                            <p class="title-projects">VALID CARD</p> <img src="images/valid-card.jpg" alt="image"></a>
-                        <p class="text-project">Validación de tarjeta de crédito con algoritmo Lunh (2018)</p>
-                    </div>
-                    <div>
-                        <a href="https://adrixsc.github.io/swapi/" target="blank">
-                            <p class="title-projects">SWAPI</p> <img src="images/swapi.jpg" alt="image"></a>
-                        <p class="text-project">Proyecto para mostrar data de la API de Star Wars (2018)</p>
-                    </div>
-                    <div>
-                        <a href="https://adrixsc.github.io/eco-shop/" target="blank">
-                            <p class="title-projects">ECOSHOP</p> <img src="images/eco-shop.jpg" alt="image"></a>
-                        <p class="text-project">Proyecto para consumir API´s de Mercado Libre, PayPal y Firebase (2018)</p>
-                    </div>
-                    <div>
-                        <a href="https://adrixsc.github.io/freelancer/" target="blank">
-                            <p class="title-projects">FREELANCER</p> <img src="images/freelancer.jpg" alt="image"></a>
-                        <p class="text-project">Maquetado sin grid ni frameworks (2017)</p>
-                    </div>
-                    <div>
-                        <a href="http://ocioymuseos.com.mx/bienvenida.php">
                             <p class="title-projects">OCIO Y MUSEOS</p> <img src="images/ocioymuseos.jpg" alt="image"></a>
-                        <p class="text-project">Diseño y maquetado (2016)</p>
+                        <p class="text-project">Diseño y maquetación de sitio para sector gubernamental, durante 2 años consecutivos.</p>
                     </div>
                     <div>
                         <a href="https://user-images.githubusercontent.com/32860516/39320478-dd3d0946-4949-11e8-9b3c-f98dea7df5e5.jpg" target="blank">
                             <p class="title-projects">VIEW SONIC</p> <img src="images/view-sonic-30.jpg" alt="image"></a>
-                        <p class="text-project">Diseño de mailing para View Sonic en su aniversario No.30 (2017)</p>
-                    </div>
-                    <div>
-                        <a href="https://user-images.githubusercontent.com/32860516/39320416-9db99078-4949-11e8-8592-099ccc69f960.jpg" target="blank">
-                            <p class="title-projects">PLAYERAS VIEW SONIC</p> <img src="images/playeras-viewsonic.jpg" alt="image"></a>
-                        <p class="text-project">Diseño de playeras para View Sonic (2017)</p>
+                        <p class="text-project">Diseño de mailing para cliente View Sonic, mailing solicitado cada trimestre, para dar a conocer los nuevos proyectos en los que trabajaría la empresa.</p>
                     </div>
                     <div>
                         <a href="https://user-images.githubusercontent.com/32860516/39320526-040f9dc2-494a-11e8-9ffd-50781b381c67.jpg" target="blank">
                             <p class="title-projects">HUNTS</p> <img src="images/hunts.jpg" alt="image"></a>
-                        <p class="text-project">Diseño de mailing para Hunts (2015)</p>
+                        <p class="text-project">Diseño de mailing para cliente Hunts, fue creado para lanzamiento de nuevo producto en el área de los trabajadores de la empresa.</p>
+                    </div>
+                    <div>
+                            <p class="title-projects">DULCE DE LECHE</p> <img src="images/dulce-de-leche.jpg" alt="image"></a>
+                        <p class="text-project">Diseño de logo para un PyME de una crepería.</p>
+                    </div>
+                    <div>
+                            <p class="title-projects">EL CABALLITO</p> <img src="images/caballito.jpg" alt="image"></a>
+                        <p class="text-project">Creación de render para cliente El Caballito, para colocar los sobres de los colorantes.</p>
+                    </div>
+                    <div>
+                            <p class="title-projects">ACT II</p> <img src="images/act2.jpg" alt="image"></a>
+                        <p class="text-project">Creación de render para cliente ACT II, para mostrar el nuevo diseño de empaque de sus productos.</p>
+                    </div>
+                    <div>
+                            <p class="title-projects">INVITACIÓN</p> <img src="images/invitacion_vws.jpg" alt="image"></a>
+                        <p class="text-project">Diseño de invitación para evento de ViewSonic en el que darían a conocer sus nuevos monitores.</p>
+                    </div>
+                    <div>
+                            <p class="title-projects">OBELISK</p> <img src="images/obelisk.jpg" alt="image"></a>
+                        <p class="text-project">Diseño de logo para PyMe que vende artículos de telefonía.</p>
                     </div>
 
                 </div>
@@ -434,8 +426,7 @@
         <div class="light-bg py-5 nav-menu" id="contact">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-5 text-center text-lg-left">
-                        <p class="mb-2"> <span class="ti-location-pin mr-2"></span> Col. 25 de Julio, G.A.M.</p>
+                    <div class="col-lg-5 text-center text-lg-left container-contact">
                         <div class=" d-block d-sm-inline-block">
                             <p class="mb-2">
                                 <span class="ti-email mr-2"></span> <a class="mr-4" href="mailto:adriana.be@outlook.com">adriana.be@outlook.com</a>
@@ -443,13 +434,12 @@
                         </div>
                         <div class="d-block d-sm-inline-block">
                             <p class="mb-0">
-                                <span class="ti-headphone-alt mr-2"></span> <a>55-2943-9209</a>
+                                <span class="ti-headphone-alt mr-2"></span> <a class="tel">55-2943-9209</a>
                             </p>
                         </div>
                     </div>
                     <div class="col-lg-6">
                         <div class="social-icons">
-                            <a href="https://github.com/AdrixSC" target="blank"><span class="ti-github"></span></a>
                             <a href="https://www.linkedin.com/in/adriana-becerril-echeverr%C3%ADa-a59b2238/" target="blank"><span class="ti-linkedin"></span></a>
                         </div>
                     </div>
