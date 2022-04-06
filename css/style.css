@@ -36,7 +36,7 @@ Copyright © All rights Reserved
 }
 #sobre-mi {
     position: relative;
-    height: 521px;
+    height: 448px;
 }
 
 body {
@@ -722,7 +722,8 @@ header {
 }
 
 #photo {
-    width: 30%;
+    width: 25%;
+    height: 480px;
 }
 
 #particles-js {
